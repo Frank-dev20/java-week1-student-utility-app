@@ -7,8 +7,11 @@ import java.util.Scanner;
 public class StudentUtilityApp {
     static Scanner scanner;
     public static void main(String[] args) {
+
         while(true) {
             scanner = new Scanner(System.in);
+
+            // Display the Menu options
             System.out.println("==== STUDENT UTILITY APP ====");
             System.out.println("1. Add two numbers ");
             System.out.println("2. Check if a number is EVEN or ODD ");
@@ -18,6 +21,7 @@ public class StudentUtilityApp {
 
             int choice = scanner.nextInt();
 
+            // based on the option selected, run the methods
             switch (choice) {
                 case 1:
                     addNumber();
@@ -39,6 +43,8 @@ public class StudentUtilityApp {
             }
         }
     }
+
+    //Methods
 
     public static void addNumber(){
         scanner = new Scanner(System.in);
