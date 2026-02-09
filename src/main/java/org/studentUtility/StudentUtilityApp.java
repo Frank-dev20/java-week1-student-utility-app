@@ -5,11 +5,11 @@ import java.util.Scanner;
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class StudentUtilityApp {
-    static Scanner scanner;
+    static Scanner scanner = new Scanner(System.in);
+
     public static void main(String[] args) {
 
         while(true) {
-            scanner = new Scanner(System.in);
 
             // Display the Menu options
             System.out.println("==== STUDENT UTILITY APP ====");
@@ -47,7 +47,6 @@ public class StudentUtilityApp {
     //Methods
 
     public static void addNumber(){
-        scanner = new Scanner(System.in);
         System.out.println("Enter a number ");
         int num1 = scanner.nextInt();
         System.out.println("Enter another number ");
@@ -57,7 +56,6 @@ public class StudentUtilityApp {
     }
 
     public static void checkOddOrEven(){
-        scanner = new Scanner(System.in);
         System.out.println("Enter a number ");
         int number = scanner.nextInt();
         String result = (number % 2 == 0) ? "EVEN" : "ODD";
@@ -65,7 +63,6 @@ public class StudentUtilityApp {
     }
 
     public static void printNumbers(){
-        scanner = new Scanner(System.in);
         System.out.println("Enter a number ");
         int number = scanner.nextInt();
         for(int i = 1; i <= number; i++){
@@ -74,7 +71,6 @@ public class StudentUtilityApp {
     }
 
     public static void dayOfTheWeek(){
-        scanner = new Scanner(System.in);
         System.out.println("Enter a whole number");
         int number = scanner.nextInt();
 
